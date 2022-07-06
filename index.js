@@ -46,7 +46,7 @@ canvas.addEventListener("click", (e) => {
         ctx.stroke();
         console.log(x1);
 
-        draw = draw + `${x1}/${y1}/${x}/${y}/${document.getElementById('colorPick').value.substr( 1, 6 )}@`
+        draw = draw + `l${x1}/${y1}/${x}/${y}/${document.getElementById('colorPick').value.substr( 1, 6 )}@`
         console.log(draw);
 
         x1 = "";  
@@ -72,7 +72,7 @@ canvas.addEventListener("click", (e) => {
         if(document.getElementById('fill').checked == true) {ctx.fillRect(x1, y1, x-x1, y-y1); }else{ctx.strokeRect(x1, y1, x-x1, y-y1); }
         ctx.closePath();
 
-        draw = draw + `${x1}/${y1}/${x-x1}/${y-y1}/${document.getElementById('colorPick').value.substr( 1, 6 )}/${document.getElementById('fill').checked}@`;
+        draw = draw + `s${x1}/${y1}/${x-x1}/${y-y1}/${document.getElementById('colorPick').value.substr( 1, 6 )}/${document.getElementById('fill').checked}@`;
         console.log(draw);
 
         x1 = "";  
@@ -102,7 +102,7 @@ canvas.addEventListener("click", (e) => {
         if(document.getElementById('fill').checked == true) {ctx.fill(); }else{ctx.stroke(); }
         ctx.closePath();
 
-        draw = draw + `${x1}/${y1}/${x-x1}/${y-y1}/${document.getElementById('colorPick').value.substr( 1, 6 )}/${d}/${document.getElementById('fill').checked}@`;
+        draw = draw + `c${x1}/${y1}/${x-x1}/${y-y1}/${document.getElementById('colorPick').value.substr( 1, 6 )}/${d}/${document.getElementById('fill').checked}@`;
         console.log(draw);
 
         

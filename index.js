@@ -26,6 +26,17 @@ canvas.addEventListener("click", (e) => {
   var x = Math.floor(e.clientX - rect.left);
   var y = Math.floor(e.clientY - rect.top)
   console.log(`${x}:${y}`)
+  if(mode != document.getElementById('drawType').value){
+    
+    mode = document.getElementById('drawType').value
+    x1 = "";  
+    x2 = "";
+    x3 = "";
+    y1 = "";
+    y2 = "";
+    y3 = "";
+    
+  }
 
   if(mode == document.getElementById('drawType').value){
 

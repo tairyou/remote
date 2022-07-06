@@ -222,7 +222,7 @@ async function sendData(inputdata){
   let sendComand = inputdata;
   inputs.value = '';
   
-  writeText(sendComand);
+  writeText(sendComand+'\n');
 
   timer =  new Date();
 
